@@ -8,14 +8,14 @@
 
 <p style="background-color: orange; text-align: center;"> I am a student who is learning Programming.</p>
 
-<div style="display: flex; justify-content: space-between;">
+<div id = "oscar_id" style="background-color: orange; display: flex; justify-content: space-between;">
     <ol>
         <li>Apple</li>
         <li>Orange</li>
         <li>Mango</li>
     </ol>
     
-    <ol>
+    <ol style="background-color: rgb(37, 3, 44);">
         <li>red</li>
         <li>Orange</li>
         <li>green</li>
@@ -36,6 +36,20 @@
 
 </div>
 
+<script>
+    function change_color(){
+        document.getElementById('oscar_id').style.backgroundColor="red";
+    }
+    function change_color2(){
+        document.getElementById('oscar_id').style.backgroundColor="pink";
+    }
+</script>
+
+<div style="display: flex; justify-content: center;">
+    <button type="button" onclick="change_color()">Hello</button>
+    
+    <button type="button" onclick="change_color2()">Bye</button>
+</div>
 
 
 <p style="text-align: center;">this is another pragraph</p>

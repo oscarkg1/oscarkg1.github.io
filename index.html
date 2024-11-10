@@ -9,13 +9,13 @@
 <p style="background-color: orange; text-align: center;"> I am a student who is learning Programming.</p>
 
 <div id = "oscar_id" style="background-color: orange; display: flex; justify-content: space-between;">
-    <ol>
+    <ol id ="first_list">
         <li>Apple</li>
         <li>Orange</li>
         <li>Mango</li>
     </ol>
     
-    <ol style="background-color: rgb(37, 3, 44);">
+    <ol id="second_list" >
         <li>red</li>
         <li>Orange</li>
         <li>green</li>
@@ -40,14 +40,21 @@
     function change_color(){
         document.getElementById('oscar_id').style.backgroundColor="red";
     }
+    function change_text(){
+        document.getElementById('first_list').style.color="red";
+        document.getElementById('second_list').style.color="yellow";
+    }
     function change_color2(){
         document.getElementById('oscar_id').style.backgroundColor="pink";
     }
+
 </script>
 
 <div style="display: flex; justify-content: center;">
     <button type="button" onclick="change_color()">Hello</button>
-    
+   
+    <button type="button" onclick="change_text()">text color</button>
+ 
     <button type="button" onclick="change_color2()">Bye</button>
 </div>
 

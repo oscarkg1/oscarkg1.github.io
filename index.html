@@ -1,68 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <h1 class="header">Hello This is Ocscar</h1>
 
-<h1 style="background-color: yellow; text-align: center;">Hello This is Ocscar</h1>
+    <p class="oscar">I am a student who is learning Programming.</p>
 
+    <div id="oscar_id" class="list-container">
+        <ol id="first_list">
+            <li>Apple</li>
+            <li>Orange</li>
+            <li>Mango</li>
+        </ol>
+        
+        <ol id="second_list">
+            <li>red</li>
+            <li>Orange</li>
+            <li>green</li>
+        </ol>
+        
+        <ol id="third_list">
+            <li>100</li>
+            <li>200</li>
+            <li>green</li>
+        </ol>
+        
+        <ol id="fouth_list">
+            <li>USA</li>
+            <li>JAPAN</li>
+            <li>PAkistan</li>
+        </ol>
+    </div>
 
+    <script>
+        function change_color() {
+            document.getElementById('oscar_id').style.backgroundColor = "red";
+        }
+        function change_text() {
+            document.getElementById('first_list').style.color = "red";
+            document.getElementById('second_list').style.color = "yellow";
+        }
+        function change_color2() {
+            document.getElementById('oscar_id').style.backgroundColor = "pink";
+        }
+    </script>
 
-<p style="background-color: orange; text-align: center;"> I am a student who is learning Programming.</p>
+    <div class="button-container">
+        <button type="button" onclick="change_color()">Hello</button>
+        <button type="button" onclick="change_text()">text color</button>
+        <button type="button" onclick="change_color2()">Bye</button>
+    </div>
 
-<div id = "oscar_id" style="background-color: orange; display: flex; justify-content: space-between;">
-    <ol id ="first_list">
-        <li>Apple</li>
-        <li>Orange</li>
-        <li>Mango</li>
-    </ol>
-    
-    <ol id="second_list" >
-        <li>red</li>
-        <li>Orange</li>
-        <li>green</li>
-    </ol>
-
-    
-    <ol>
-        <li>100</li>
-        <li>200</li>
-        <li>green</li>
-    </ol>
-    
-    <ol>
-        <li>USA</li>
-        <li>JAPAN</li>
-        <li>PAkistan</li>
-    </ol>
-
-</div>
-
-<script>
-    function change_color(){
-        document.getElementById('oscar_id').style.backgroundColor="red";
-    }
-    function change_text(){
-        document.getElementById('first_list').style.color="red";
-        document.getElementById('second_list').style.color="yellow";
-    }
-    function change_color2(){
-        document.getElementById('oscar_id').style.backgroundColor="pink";
-    }
-
-</script>
-
-<div style="display: flex; justify-content: center;">
-    <button type="button" onclick="change_color()">Hello</button>
-   
-    <button type="button" onclick="change_text()">text color</button>
- 
-    <button type="button" onclick="change_color2()">Bye</button>
-</div>
-
-
-<p style="text-align: center;">this is another pragraph</p>
-
-
-
+    <p class="oscar">this is another pragraph</p>
 </body>
 </html>
-
